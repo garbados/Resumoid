@@ -1,0 +1,11 @@
+git+https://code.google.com/p/python-linkedin/
+flask
+py-bcrypt
+mongoengine
+Flask-WTF
+git+https://github.com/sbook/flask-mongoengine.git
+flask-login
+git+https://github.com/synedra/python-oauth2.git
+Flask-Script
+Flask-Assets
+jsmin

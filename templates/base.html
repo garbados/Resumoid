@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+      api_key: nq2g7wic5am4
+      onLoad: onLinkedInLoad
+      authorize : true
+    </script>
+    {% assets "js" %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+    {% assets "css" %}
+      <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+    {% endassets %}
+   <title>{% block title %}Resumoid{% endblock %}</title>
+  </head>
+  <body>
+    <div id="topnav" class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Resumoid</a>
+          <ul class="nav">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Companies</a></li>
+            <li><a href="#">Profiles</a></li>
+          </ul>
+          <div id="profile" class="navbar-text pull-right">
+            <script type="in/Login"></script>
+            <span id="firstname"></span>
+            <span id="lastname"></span>
+            <img id="pic"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div id="footer">
+      {% block footer %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
