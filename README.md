@@ -24,6 +24,10 @@ Install more requirements after installing node for your system
     ./configure
     make
     make install
+    
+Create config.settings
+
+    touch config/settings.py
 
 That should be it! Email me at garbados@gmail.com if it isn't.
 
