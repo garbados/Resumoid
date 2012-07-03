@@ -1,8 +1,39 @@
 # RESUMOID
 
+## Let Work Speak
+
 You didn't learn everything you know on the job, so why let your resume imply that? Use Resumoid to build a portfolio of your skills and abilities, and let your talents speak for you.
 
 The best and the brightest don't spend their time practicing resume writing. They spend it honing what make them great. Find them on their merits. Let their work speak for itself.
+
+## Installation
+
+Get the repo
+
+    git clone git@github.com:garbados/Resumoid.git
+
+Install python requirements
+
+    virtualenv venv --no-site-packages
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+Resumoid uses `flask-assets`, which requires [node.js](http://nodejs.org/#)
+
+Install more requirements after installing node for your system
+
+    git submodule init
+    git submodule update
+
+Create config.settings
+
+    touch config/settings.py
+
+That should be it! Email me at garbados@gmail.com if it isn't.
+
+## Running Resumoid
+
+`python app.py run`
 
 ## Authentication
 
@@ -43,7 +74,7 @@ Portfolios display examples of your work, making it much easier to answer #1 tha
 
 Resumoid portfolios reside at [resumoid url]/p/[portfolio id]
 
-### 
+### User Stories
 
 In administering their portfolio, a user can:
 
