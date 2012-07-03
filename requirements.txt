@@ -1,0 +1,6 @@
+flask
+git+https://github.com/garbados/flask-browserid.git
+flask-mongoengine
+flask-script
+flask-assets
+ipython
